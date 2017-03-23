@@ -58,6 +58,7 @@ export default {
   },
   methods:{
   	handelClick(e,index){
+//		alert(index)
   		if(this.isShowList[index] === true){
   			return false
   		}else{
@@ -73,7 +74,7 @@ export default {
 					this.appear() 				
   			}
 				this.isMainClick[index] = false
-  		}else if(index < 2){
+  		}else{
   			this.firstMsg = true
   			this.secMsg = false
 				this.hidden()
