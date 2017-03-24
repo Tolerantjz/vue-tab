@@ -68,10 +68,6 @@
 				}
 				//		alert('be clicked',this.isShowList[index])
 				if(index === 2) {
-					const secState = window.getComputedStyle(this.$refs.inspect).display
-					console.log(secState)
-					if(this.secState !== "none") {
-						console.log(this.secState)
 						if(this.isShowSecondTitles === true) {
 							console.log('i would be false')
 							this.hidden()
@@ -79,9 +75,6 @@
 							this.appear()
 						}
 						this.isMainClick[index] = false
-					} else {
-						return false
-					}
 				} else {
 					this.firstMsg = true
 					this.secMsg = false
